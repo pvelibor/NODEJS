@@ -7,11 +7,14 @@ const rl = readline.createInterface({
 
 rl.question('Unesi broj: ', (number) => {
     const broj = Number(number);
+
     if (broj % 2 === 0) {
         console.log(broj + " je paran");
     } else {
         console.log(broj + " je neparan");
     }
 
-    rl.close();
+    rl.close(); //:emu ovo služi?
 });
+
+//kako dodatri uslov da ukoliko nije unet ispravan broj da izbaci grešku
