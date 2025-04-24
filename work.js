@@ -14,7 +14,7 @@ rl.question('Unesi broj: ', (number) => {
         console.log(broj + " je neparan");
     }
 
-    rl.close(); //:emu ovo služi?
+    rl.close();
 });
 
 //kako dodatri uslov da ukoliko nije unet ispravan broj da izbaci grešku
