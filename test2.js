@@ -1,15 +1,3 @@
-rl.question('Unesi adresu: ', (number) => {
-    const broj = Number(number);
-
-    if (broj % 2 === 0) {
-        console.log(broj + " je paran");
-    } else {
-        console.log(broj + " je neparan");
-    }
-
-    rl.close();
-});
-
 const userProfile = {
     id: 12345,
     name: {
@@ -34,10 +22,19 @@ const userProfile = {
     }
   };
 
-
 const readline = require('readline');
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+rl.question('Unesi adresu: ', (address) => {
+    const address = String(address);
+
+    rl.close();
+});
+
+
+
+
+
 
